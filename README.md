@@ -1,51 +1,39 @@
-# RepositorioTemplate
-Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
+# Supermercado
 
-**!! *Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(Paradigma)_(NomeDoProjeto)*. !!** 
-
-Paradigmas:
- - Funcional
- - Logico
- - SMA
-
-**!! *Não coloque os nomes dos alunos no título do repositório*. !!**
-
-**!! *Exemplo de título correto: 2021.1_G1_Logico_ProjetoRoteirosAereos*. !!**
- 
- (Apague essa seção)
-
-# NomeDoProjeto
-
-**Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T01 <br>
-**Nro do Grupo**: XX<br>
-**Paradigma**: XXXXXXXXXX<br>
+**Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T03 <br>
+**Nro do Grupo**: 03<br>
+**Paradigma**: SMA<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 17/0138551	  |  Bruno Henrique |
+| 17/0033112	  |  Eugênio Sales  |
+| 14/0133305	  |  Caio Nunes     |
+| 15/0059329	  |  Wallacy Braz   |
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
+Sistema análogo a um supermercado. Nesse sistema, há um agente comprador e outro vendedor no domínio de produtos de supermercado. Além disso, é utilizado uma API específica para obter imagens e preços reais dos produtos.
 
 ## Screenshots
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+
 
 ## Instalação 
-**Linguagens**: xxxxxx<br>
-**Tecnologias**: xxxxxx<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
+**Linguagens**: Java <br>
+**Tecnologias**: Jade <br>
 
 ## Uso 
-Explique como usar seu projeto, caso haja algum passo a passo após o comando de execução.
+
+1. Abra o projeto no Eclipse
+2. Adicione os .jar na pasta jar no build path do projeto
+3. Cria um agente vendendor e outro comprador no jade
+4. Cadastre o produto disponível a partir do agente vendedor
+5. Com o agente comprador, passe o nome do produto de interesse
+6. Visualize o log no console do eclipse
+
 
 ## Vídeo
-Adicione 1 ou mais vídeos com a execução do projeto.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas a seguir.
+Vídeo disponível no repositório do projeto.
 
 ## Fontes
-Caso utilize materiais de terceiros, referencie-os adequadamente.
+[BookAgents](https://unbbr-my.sharepoint.com/personal/mileneserrano_unb_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmileneserrano%5Funb%5Fbr%2FDocuments%2FPP%20%2D%20V%C3%ADdeosOriginais%2F05%20%2D%20SMA%2FAula3A%20%2D%20SMA%20%2D%20Rodando%20BookAgent%20Project%2Emp4&parent=%2Fpersonal%2Fmileneserrano%5Funb%5Fbr%2FDocuments%2FPP%20%2D%20V%C3%ADdeosOriginais%2F05%20%2D%20SMA&originalPath=aHR0cHM6Ly91bmJici1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9taWxlbmVzZXJyYW5vX3VuYl9ici9FYXJ6MGVtdU9nMUtsR3JxYUl4Q1RXc0JPSUYxd05GMUdtdFNRSkFUNjhHdlFBP3J0aW1lPV96b1NFbU9QMlVn)
