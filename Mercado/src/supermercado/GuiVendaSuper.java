@@ -6,6 +6,8 @@ import javax.swing.*;
 
 import jade.core.AID;
 
+import dados.Api;
+
 class GuiVendaSuper extends JFrame{
 	private AgenteVendas agenteVendas;
 	
@@ -15,6 +17,10 @@ class GuiVendaSuper extends JFrame{
 		super(a.getLocalName());
 		
 		agenteVendas = a;
+
+		// API
+		Api api = new Api();
+		api.get();
 		
 		JPanel p = new JPanel();
 		p.setLayout(new GridLayout(2,2));
