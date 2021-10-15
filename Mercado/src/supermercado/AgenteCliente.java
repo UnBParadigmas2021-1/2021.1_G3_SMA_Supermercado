@@ -46,7 +46,7 @@ public class AgenteCliente extends Agent{
 						= new DFAgentDescription();
 					ServiceDescription sd
 						= new ServiceDescription();
-					sd.setType("venda-itens"); // venda-livros
+					sd.setType("venda-itens"); // venda-produtos
 					template.addServices(sd);
 					try {
 						DFAgentDescription[] result = DFService.search(myAgent, template);
@@ -94,7 +94,7 @@ public class AgenteCliente extends Agent{
 					cfp.addReceiver(AgenteEstoque[i]);
 				}
 				cfp.setContent(TituloItem);
-				cfp.setConversationId("comercio-itens"); //comercio livros
+				cfp.setConversationId("comercio-itens"); //comercio produtos
 				cfp.setReplyWith("cfp"+ System.currentTimeMillis());
 				myAgent.send(cfp);
 				//Prepara o modelo de recever as respostas
@@ -144,7 +144,7 @@ public class AgenteCliente extends Agent{
 						// Resposta da ordem de compra
 						if(reply.getPerformative() == ACLMessage.INFORM) {
 							//compra bem sucedida
-							System.out.println("Livro "+ TituloItem + " comprado de " + reply.getSender().getName());
+							System.out.println("Produto: "+ TituloItem + " comprado de " + reply.getSender().getName());
 							System.out.println("Preço: R$ " + promocional);
 							myAgent.doDelete();
 						} else {
@@ -163,7 +163,7 @@ public class AgenteCliente extends Agent{
 		@Override
 		public boolean done() {
 			if (step == 2 && produto == null) {
-				System.out.println("Desculpe mas o livro " + TituloItem + " mas não está a venda");
+				System.out.println("Desculpe mas o produto " + TituloItem + " mas não está a venda");
 			}
 			return ((step ==2 && produto == null || step ==4));
 		}

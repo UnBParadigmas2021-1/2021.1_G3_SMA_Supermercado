@@ -29,7 +29,7 @@ public class AgenteVendas extends Agent{
   aba = new InterfaceFuncionario(this);
   
   
-  // registra o serviço do vendedor de livros
+  // registra o serviço do vendedor de produtos
   DFAgentDescription dfd = new DFAgentDescription();
   dfd.setName(getAID());
   ServiceDescription sd = new ServiceDescription();
@@ -123,7 +123,7 @@ public class AgenteVendas extends Agent{
     
     if(valor != null) {
      resposta.setPerformative(ACLMessage.INFORM);
-     System.out.println("O produto " + titulo + " foi vendido ao cliente" + msg.getSender().getName());
+     System.out.println("O produto " + titulo + " foi vendido ao cliente " + msg.getSender().getName());
      
     }else {
      // o item vendido
