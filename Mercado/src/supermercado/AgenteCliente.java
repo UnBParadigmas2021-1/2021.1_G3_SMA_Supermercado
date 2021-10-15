@@ -80,7 +80,7 @@ public class AgenteCliente extends Agent{
 	
 	private class PedidoCompra extends Behaviour{
 		private AID produto;
-		private int promocional;
+		private float promocional;
 		private int repliesCnt = 0;
 		private MessageTemplate mt;
 		private int step = 0;
@@ -106,7 +106,7 @@ public class AgenteCliente extends Agent{
 				ACLMessage reply = myAgent.receive(mt);
 				if(reply != null) {
 					if(reply.getPerformative() == ACLMessage.PROPOSE) {
-						int preco = Integer.parseInt(reply.getContent());
+						float preco = Float.parseFloat(reply.getContent()) ;
 						if(produto == null || preco < promocional) {
 							promocional = preco;
 							produto = reply.getSender();

@@ -11,12 +11,13 @@ import jade.domain.FIPAAgentManagement.ServiceDescription;
 
 import java.util.Hashtable;
 
+import interfaceUsuario.InterfaceFuncionario;
 
 public class AgenteVendas extends Agent{
  // guarda os itens
  private Hashtable estoque; //catalago
  //permite adicionar itens
- private GuiVendaSuper aba;
+ private InterfaceFuncionario aba;
  
  //incinaliza agente
  @Override
@@ -25,8 +26,8 @@ public class AgenteVendas extends Agent{
   System.out.println("Bem vindo " + getAID().getName() + " tenha boas vendas");
   estoque = new Hashtable();
   
-  aba = new GuiVendaSuper(this);
-  aba.showGui();
+  aba = new InterfaceFuncionario(this);
+  
   
   // registra o serviço do vendedor de livros
   DFAgentDescription dfd = new DFAgentDescription();
@@ -70,7 +71,7 @@ public class AgenteVendas extends Agent{
    
    public void action() {
     estoque.put(titulo, new Float(precio));
-    System.out.println("Livro : "+ titulo + " esta disponivel pelo valor de " + precio);
+    System.out.println("Produto : "+ titulo + " esta disponivel pelo valor de " + precio);
 
    }
    });
@@ -90,7 +91,7 @@ public class AgenteVendas extends Agent{
     if(valor != null) {
      // se o produto estiver disṕonivel responde com o valor
      resposta.setPerformative(ACLMessage.PROPOSE);
-     resposta.setContent(String.valueOf(valor.intValue()));
+     resposta.setContent(String.valueOf(valor.floatValue()));
     
      
     }else {
@@ -122,7 +123,7 @@ public class AgenteVendas extends Agent{
     
     if(valor != null) {
      resposta.setPerformative(ACLMessage.INFORM);
-     System.out.println("O livre " + titulo + " foi vendido ao agente " + msg.getSender().getName());
+     System.out.println("O produto " + titulo + " foi vendido ao cliente" + msg.getSender().getName());
      
     }else {
      // o item vendido
