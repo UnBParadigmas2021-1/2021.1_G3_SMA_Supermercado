@@ -39,7 +39,7 @@ public class InterfaceFuncionario extends JFrame{
 		agenteVendas = a;
 
 		//super("Testes");
-		setSize(800,600);
+		setSize(600,700);
 		setResizable(false);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		p.setLayout(new GridLayout(3,3));
@@ -64,6 +64,8 @@ public class InterfaceFuncionario extends JFrame{
 		add(p);
 		setVisible(true);
 	}
+	 
 	
 }
+
 

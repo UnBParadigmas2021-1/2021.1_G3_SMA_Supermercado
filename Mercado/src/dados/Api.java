@@ -89,8 +89,10 @@ public class Api {
 			JSONObject info = prices.getJSONObject(0);
 			float price = info.getFloat("price");
 			
-			System.out.println("Nome: " + name + " Preço: " + price + " Image: " +  image);
-			arraylista.add(name);arraylista.add(price);arraylista.add(image);
+			//System.out.println("Nome: " + name + " Preço: " + price + " Image: " +  image);
+			arraylista.add(name);
+			arraylista.add(price);
+			arraylista.add(image);
 		}
 		
 		
