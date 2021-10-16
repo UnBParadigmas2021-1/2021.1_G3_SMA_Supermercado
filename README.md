@@ -16,8 +16,10 @@
 Sistema análogo a um supermercado. Nesse sistema, há um agente comprador e outro vendedor no domínio de produtos de supermercado. Além disso, é utilizado uma API específica para obter imagens e preços reais dos produtos.
 
 ## Screenshots
-
-
+![1](https://imgur.com/J1Oeou1.png)
+![2](https://imgur.com/DfEBQvS.png)
+![](https://imgur.com/9x3txGg.png)
+![](https://imgur.com/K1hMDnY.png)
 ## Instalação 
 **Linguagens**: Java <br>
 **Tecnologias**: Jade <br>
