@@ -40,7 +40,6 @@ public class GradeProdutos extends JButton implements ActionListener{
 		//setIconImage(new ImageIcon(image).getImage());
 		//BufferedImage image = ImageIO.read(url);
 		//ImageIO image = ImageIO.read(url);
-		//f.setIconImage(new ImageIcon(image).getImage());
 
 		this.addActionListener(this);
 		nome = produto;
@@ -48,7 +47,7 @@ public class GradeProdutos extends JButton implements ActionListener{
 		imagem = link_imagem;
 		
 		//url = new ImageIcon(this.getClass().getResource("https://ibassets.com.br/ib.item.image.medium/m-44435f9661cd421eaf878e04691a3086.jpeg")); 
-		//Image image = ImageIO.read(url);
+		//Image image = ImageIO.read(url);  
 		//setIconImage(new ImageIcon(image).getImage());
 
 		try {
